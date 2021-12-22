@@ -32,7 +32,7 @@ public class MyLinkedList {
 	}
 	
 	/*
-	 * Ability to search LinkedList to find Node with value 30
+	 * UC-7: Ability to search LinkedList to find Node with value 30
 	 */
 	public void find(Integer i) {
 		if(list.contains(i))
