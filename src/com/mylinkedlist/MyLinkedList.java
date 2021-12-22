@@ -11,11 +11,11 @@ public class MyLinkedList {
 		LinkedList<Integer> list = new LinkedList<>();
 		/*
 		 * Ability to create Linked List by adding 30 and 56 to 70
-		 * add 70 then 30 then 56 such that LinkedList Sequence: 56->30->70
+		 * add 56 then 30 then 70 such that LinkedList Sequence: 56->30->70
 		 */
-		list.add(70);
-		list.addFirst(30);
-		list.addFirst(56);
+		list.add(56);
+		list.addLast(30);
+		list.addLast(70);
 		System.out.println(list);
 		
 	}
