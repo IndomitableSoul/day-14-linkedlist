@@ -32,13 +32,14 @@ public class MyLinkedList {
 	}
 	
 	/*
-	 * Ability to search LinkedList to find Node with value 30
+	 * UC-7: Ability to search LinkedList to find Node with value 30
 	 */
-	public void find(Integer i) {
+	public int find(Integer i) {
 		if(list.contains(i))
 			System.out.println("Index of "+i+" is "+list.indexOf(i));
 		else
 			System.out.println("Element not found");
+		return list.indexOf(i);
 	}
 	public static void main(String[] args) {
 		
@@ -52,7 +53,12 @@ public class MyLinkedList {
 		System.out.println(ls.list);// [56, 30, 70]		
 		ls.popLast();//[56, 30, 70]
 		System.out.println(ls.list);//[56, 30]
+		ls.add(70);
+		System.out.println(ls.list);
 		ls.find(50);
+		int index = ls.find(30);
+		ls.insert(index+1, 40);
+		System.out.println(ls.list);
 		
 	}
 
