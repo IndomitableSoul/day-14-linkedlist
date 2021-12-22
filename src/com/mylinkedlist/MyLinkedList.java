@@ -21,6 +21,15 @@ public class MyLinkedList {
 	public void insert(int index, Integer item) {
 		list.add(index, item);
 	}
+
+	/*
+	 * UC-6 Ability to delete the last element in the LinkedList 
+	 * of sequence 56->30->70 to get 56->30
+	 */
+	private void popLast() {
+		list.removeLast();
+		
+	}
 	public static void main(String[] args) {
 		
 		
@@ -31,8 +40,10 @@ public class MyLinkedList {
 		System.out.println(ls.list);
 		ls.insert(1, 30);
 		System.out.println(ls.list);// [56, 30, 70]		
-		ls.pop();
-		System.out.println(ls.list);//[30, 70]
+		ls.popLast();//[56, 30, 70]
+		System.out.println(ls.list);//[56, 30]
 		
 	}
+
+	
 }
