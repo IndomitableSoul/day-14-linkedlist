@@ -10,12 +10,13 @@ public class MyLinkedList {
 		 */
 		LinkedList<Integer> list = new LinkedList<>();
 		/*
-		 * Ability to create Linked List by adding 30 and 56 to 70
-		 * add 56 then 30 then 70 such that LinkedList Sequence: 56->30->70
+		 *Ability to insert 30 between 56 and 70
+		 *Final Sequence: 56->30->70
 		 */
 		list.add(56);
-		list.addLast(30);
-		list.addLast(70);
+		list.add(70);
+		System.out.println(list);
+		list.add(1, 30);
 		System.out.println(list);
 		
 	}
